@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border: 1px solid #bec9be;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px; /* Add left margin to avoid overlap with sidebar */
+}
+
+.cart-icon{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+input[type="text"]{
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bec9be;
+}
+
+.input-icons-card{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icons-card{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 639px) {
+    .single-icon-card {
+        display: none; /* Hide cart icon on mobile */
+    }
+
+    .icons-card {
+        font-size: 16px;
+    }
+
+    input[type="text"]{
+        width: 150px;
+        margin-left: 0;
+    }
+
+    nav {
+        margin-left: 120px; /* Adjust margin for mobile */
+    }
+}
+
+@media (max-width:428px){
+
+    .icons-card {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 20px;
+    }
+}
+
+
