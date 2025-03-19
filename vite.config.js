@@ -4,6 +4,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ["advance-k-filtering.onrender.com"], // Add your Render URL here
+    host: "0.0.0.0", // Ensure it binds to all network interfaces
+    port: 3000, // Use port 3000 explicitly
+  },
+  preview: {
+    host: "0.0.0.0",
+    port: 3000, // Use the same port for preview mode
   },
 });
